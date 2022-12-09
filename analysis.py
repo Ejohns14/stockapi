@@ -36,12 +36,12 @@ for file in filenames:
         i += 5
         print(dev)
     #create plot line graph
-    #fig,ax= plt.subplots()
-    #ax.plot(AMZN_stdev)
-   # ax.set_ylabel("STDEV of price")
-    #ax.set_xlabel("weeks since March29")
-   # ax.set_title("STANDARD DEVIATION OF STOCKS")
-    #plt.savefig(f"data{file}.png")
+    fig,ax= plt.subplots()
+    ax.plot(HD_stdev)
+    ax.set_ylabel("STDEV of price")
+    ax.set_xlabel("weeks since March29")
+    ax.set_title("STANDARD DEVIATION OF STOCKS")
+    plt.savefig(f"data{file}.png")
 
 
 
